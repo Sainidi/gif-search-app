@@ -1,0 +1,43 @@
+@import "../../assets/scss/skin";
+
+.header {
+  background-color: $header;
+  width: 100%;
+  position: fixed;
+  padding: 24px 0;
+  display: flex;
+  justify-content: center;
+  z-index: 999;
+
+  &-wrapper {
+    display: flex;
+    gap: 15px;
+    @media screen and (min-width: 1366px + 0.2) {
+      align-items: center;
+      justify-content: space-between;
+    }
+    @media screen and (max-width: 1366px + 0.2) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+
+  &-menu {
+    display: flex;
+    flex-basis: 15%;
+    justify-content: space-between;
+
+    &__link {
+      color: white;
+      text-decoration: none;
+
+      &:hover {
+        color: darkorange;
+      }
+
+      &:nth-child(1) {
+        margin-right: 15px;
+      }
+    }
+  }
+}

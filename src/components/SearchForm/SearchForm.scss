@@ -1,0 +1,47 @@
+@import "src/assets/scss/skin";
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-height: 56px;
+
+  @media screen and (min-width: 1366px + 0.2) {
+    flex-basis: 66%;
+  }
+  @media screen and (max-width: 1366px + 0.2) {
+    width: 100%;
+  }
+
+  &-input {
+    width: 100%;
+    height: 100%;
+    padding: 18px 0 18px 48px;
+    background-color: $white;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 16px;
+    border: none;
+
+    &::-webkit-search-cancel-button,
+    &::-webkit-search-decoration {
+      display: none;
+    }
+
+
+    &::placeholder {
+      color: $secondary;
+    }
+  }
+
+  &-icon {
+    position: absolute;
+    left: 19px;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+}

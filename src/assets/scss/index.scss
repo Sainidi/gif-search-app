@@ -1,0 +1,52 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+}
+
+.app {
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1920px;
+  @media screen and (min-width: 1366px + 0.2) {
+    padding: 0 300px;
+  }
+  @media (max-width: 1366px + 0.2) and (min-width: 425px + 0.2) {
+    padding: 0 80px;
+  }
+  @media screen and (max-width: 425px + 0.2) {
+    padding: 0 40px;
+  }
+}
+
+.wrapper {
+  padding-bottom: 112px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  transform: rotate(360deg);
+
+  @media screen and (min-width: 1366px + 0.2) {
+    padding-top: 136px;
+    gap: 24px;
+  }
+  @media screen and (max-width: 1366px + 0.2) {
+    padding-top: 169px;
+    gap: 15px;
+  }
+}
