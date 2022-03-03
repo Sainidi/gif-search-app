@@ -50,3 +50,21 @@ body {
     gap: 15px;
   }
 }
+
+.loader {
+  transition: all 0.5s ease;
+  transform: rotate(0deg);
+  animation: move 1.5s infinite linear;
+}
+
+@keyframes move {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
